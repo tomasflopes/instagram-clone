@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, FeedWrapper } from './styles';
 
 import TopBar from '../TopBar';
 import Feed from '../Feed';
-// import SideBar from "../SideBar";
+import SideBar from '../SideBar';
 
 const Layout: React.FC = () => {
   return (
     <Container>
       <TopBar />
-      <Feed />
-      {/* <SideBar /> */}
+      <FeedWrapper>
+        <Feed />
+        <SideBar />
+      </FeedWrapper>
     </Container>
   );
 };

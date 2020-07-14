@@ -12,6 +12,7 @@ import {
 export const Container = styled.div`
   position: sticky;
   top: 0;
+  z-index: 2;
   display: flex;
   background: var(--secondary);
   padding: 0 25%;
