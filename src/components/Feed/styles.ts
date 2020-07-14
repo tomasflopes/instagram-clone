@@ -10,7 +10,8 @@ const iconCSS = css`
 `;
 
 export const Container = styled.div`
-  padding: 0 25%;
+  width: 50%;
+  margin: 0 auto;
 
   background: var(--gray);
 `;
