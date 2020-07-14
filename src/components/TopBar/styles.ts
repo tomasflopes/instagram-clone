@@ -10,12 +10,13 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
+  position: sticky;
+  top: 0;
   display: flex;
   background: var(--secondary);
   padding: 0 25%;
   border-bottom: 2px solid var(--gray);
 
-  position: sticky;
   height: 60px;
 
   align-items: center;

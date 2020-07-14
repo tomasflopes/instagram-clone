@@ -3,40 +3,157 @@ import styled, { css } from 'styled-components';
 import { Heart, Comment, Message, Bookmark } from '../../styles/Icons';
 
 const iconCSS = css`
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
   color: var(--gray);
 `;
 
 export const Container = styled.div`
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: min(580px, 80%);
   margin: 0 auto;
-
-  background: var(--gray);
 `;
 
-export const Stories = styled.div``;
+export const Stories = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  overflow-y: auto;
 
-export const User = styled.div``;
+  border-radius: 3px;
 
-export const Avatar = styled.div``;
+  scrollbar-width: none;
 
-export const Publication = styled.div``;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
-export const UserInfo = styled.div``;
+  background: var(--secondary);
 
-export const UserData = styled.div``;
+  border: 1px solid var(--gray);
+
+  padding: 10px 5px;
+
+  width: 100%;
+`;
+
+export const User = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  margin-left: 6px;
+
+  > span {
+    color: var(--white);
+    font-size: 14px;
+    margin-top: 3px;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`;
+
+export const Avatar = styled.div`
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--content);
+  border: 2px solid #f555a2;
+
+  flex-shrink: 0;
+`;
+
+export const Publication = styled.div`
+  display: flex;
+
+  border-radius: 3px;
+
+  margin-top: 20px;
+
+  flex-direction: column;
+
+  border: 1px solid var(--gray);
+
+  background: var(--secondary);
+`;
+
+export const UserInfo = styled.div`
+  display: flex;
+
+  height: 60px;
+
+  align-items: center;
+
+  > strong {
+    font-size: 14px;
+  }
+
+  > span {
+    font-size: 14px;
+  }
+`;
+
+export const UserData = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 8px;
+`;
+
+export const UserAvatar = styled.div`
+  width: 32px;
+  height: 32px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+  background: var(--content);
+`;
 
 export const Dots = styled.div``;
 
-export const Photo = styled.div``;
+export const Photo = styled.div`
+  width: min(720px, 100%);
+  height: 600px;
 
-export const InteractionArea = styled.div``;
+  background: var(--content);
+`;
 
-export const UserAvatar = styled.div``;
+export const InteractionArea = styled.div`
+  display: flex;
 
-export const InteractionIcons = styled.div``;
+  flex-direction: column;
+
+  > span {
+    margin-left: 15px;
+  }
+
+  > span + span {
+    margin-top: 8px;
+  }
+`;
+
+export const InteractionIcons = styled.div`
+  display: flex;
+  margin: 10px 0 5px 10px;
+
+  align-items: center;
+  width: 100%;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    width: min(120px, 30%);
+  }
+
+  position: relative;
+`;
 
 export const LikeIcon = styled(Heart)`
   ${iconCSS}
@@ -52,10 +169,42 @@ export const MessageIcon = styled(Message)`
 
 export const SaveIcon = styled(Bookmark)`
   ${iconCSS}
+
+  position: absolute;
+  right: 20px;
 `;
 
-export const TimeStamp = styled.div``;
+export const TimeStamp = styled.span`
+  color: var(--gray);
+  letter-spacing: -1px;
 
-export const CommentArea = styled.div``;
+  text-transform: uppercase;
+  font-size: 13px;
 
-export const PostButton = styled.div``;
+  margin-bottom: 10px;
+`;
+
+export const CommentArea = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+
+  height: 55px;
+
+  border: 1px solid var(--gray);
+
+  > span {
+    font-size: 14px;
+    color: var(--gray);
+  }
+`;
+
+export const PostButton = styled.button`
+  color: var(--blue);
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+`;

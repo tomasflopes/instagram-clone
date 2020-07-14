@@ -42,6 +42,34 @@ const Feed: React.FC = () => {
           <Avatar />
           <span>tomas050302</span>
         </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
+        <User>
+          <Avatar />
+          <span>tomas050302</span>
+        </User>
       </Stories>
 
       <Publication>
@@ -56,22 +84,24 @@ const Feed: React.FC = () => {
         <Photo />
         <InteractionArea>
           <InteractionIcons>
-            <LikeIcon />
-            <CommentIcon />
-            <MessageIcon />
+            <div>
+              <LikeIcon />
+              <CommentIcon />
+              <MessageIcon />
+            </div>
             <SaveIcon />
           </InteractionIcons>
           <span>
             Liked by <strong>tomas050302</strong> and <strong>others</strong>
           </span>
           <span>
-            <strong>tomas050302</strong>descrição
+            <strong>tomas050302</strong> descrição
           </span>
           <TimeStamp>38 minutes ago</TimeStamp>
         </InteractionArea>
         <CommentArea>
-          <span>Add a comment</span>
-          <PostButton />
+          <span>Add a comment...</span>
+          <PostButton>Post</PostButton>
         </CommentArea>
       </Publication>
     </Container>
