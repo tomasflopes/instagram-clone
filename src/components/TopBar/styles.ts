@@ -25,8 +25,8 @@ export const Container = styled.div`
 `;
 
 const iconCSS = css`
-  width: 28px;
-  height: 28px;
+  width: 27px;
+  height: 27px;
   flex-shrink: 0;
   fill: var(--gray);
 
@@ -99,8 +99,8 @@ export const NotificationsIcon = styled(Heart)`
 `;
 
 export const Avatar = styled.div`
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   flex-shrink: 0;
   border-radius: 50%;
 
