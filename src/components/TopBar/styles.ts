@@ -25,8 +25,8 @@ export const Container = styled.div`
 `;
 
 const iconCSS = css`
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
   fill: var(--gray);
 
@@ -54,12 +54,13 @@ export const SearchIcon = styled(Search)`
   fill: var(--gray);
 
   position: absolute;
-  left: 20%;
+  left: 30%;
 `;
 
 export const SearchInput = styled.input`
   border: 1px solid var(--gray);
-  width: 100%;
+  width: 80%;
+  background: var(--primary);
 
   padding: 5px 20px;
   border-radius: 3px;

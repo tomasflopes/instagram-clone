@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const FeedWrapper = styled.div`
   display: flex;
-  width: min(920px, 80%);
+  width: min(980px, 80%);
   margin: 0 auto;
   justify-content: flex-start;
 `;

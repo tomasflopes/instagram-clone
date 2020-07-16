@@ -36,9 +36,33 @@ const SideBar: React.FC = () => {
           <UserAvatar />
           <UserInformation>
             <strong>tomas050302</strong>
-            <span>Followed by tomas.lopes18 + 75 more</span>
+            <span>Followed by kkkxdhd + 75 more</span>
           </UserInformation>
-          <FollowButton placeholder='Follow' />
+          <FollowButton>Follow</FollowButton>
+        </SuggestedUser>
+        <SuggestedUser>
+          <UserAvatar />
+          <UserInformation>
+            <strong>tomas050302</strong>
+            <span>Followed by kkkxdhd + 75 more</span>
+          </UserInformation>
+          <FollowButton>Follow</FollowButton>
+        </SuggestedUser>
+        <SuggestedUser>
+          <UserAvatar />
+          <UserInformation>
+            <strong>tomas050302</strong>
+            <span>Followed by kkkxdhd + 75 more</span>
+          </UserInformation>
+          <FollowButton>Follow</FollowButton>
+        </SuggestedUser>
+        <SuggestedUser>
+          <UserAvatar />
+          <UserInformation>
+            <strong>tomas050302</strong>
+            <span>Followed by kkkxdhd + 75 more</span>
+          </UserInformation>
+          <FollowButton>Follow</FollowButton>
         </SuggestedUser>
       </Suggestions>
 
@@ -51,6 +75,15 @@ const SideBar: React.FC = () => {
         <Dot />
         <span>Privacy</span>
         <Dot />
+        <span>Terms</span>
+        <Dot />
+        <span>Location</span>
+        <Dot />
+        <span>Hashtags</span>
+        <Dot />
+        <span>Top Accounts</span>
+        <Dot />
+        <span>Language</span>
       </Links>
 
       <Copyright>© 2020 INSTAGRAM FROM FACEBOOK</Copyright>
