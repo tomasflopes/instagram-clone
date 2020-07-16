@@ -8,6 +8,12 @@
 
 > ReactJS Instagram Clone using Styled Components
 
+## Demo
+
+<div align="center">
+  <img src="../instagram-clone/assets/demo.gif" alt="Demo"/>
+</div>
+
 ## Install
 
 ```sh
