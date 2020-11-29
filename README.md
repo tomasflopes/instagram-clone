@@ -11,7 +11,7 @@
 ## Demo
 
 <div align="center">
-  <img src="../instagram-clone/assets/demo.gif" alt="Demo"/>
+  <img src="./assets/demo.gif" alt="Demo"/>
 </div>
 
 ## Install
